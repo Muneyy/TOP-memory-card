@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Components/Card";
 import "./Styles/app.css"
 
 const App = () => {
 
   const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
+  
+  useEffect(() => {
+    setBestScore(bestScore => {
+      if (bestScore < score) {
+        console.log(bestScore)
+        return score
+      }
+    }
+    )
+  }, [score])
 
   const [member0, setMember0] = useState({name: "Chuu", imageUrl: "chuu.jpg", clicked: false});
   const [member1, setMember1] = useState({name: "Yves", imageUrl: "yves.jpg", clicked: false});
@@ -73,9 +84,10 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <div className="score">
         <h3>Score: {score}</h3>
+        <h3>Best Score: {bestScore}</h3>
       </div>
       <div className="card-container">
         {memberList.map(member => {
@@ -89,7 +101,6 @@ const App = () => {
           )
         })}
       </div>
-      <button onClick={randomize}>Shuffle</button>
     </div>
   );
 }
