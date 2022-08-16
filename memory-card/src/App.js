@@ -21,14 +21,12 @@ const App = () => {
   const [member10, setMember10] = useState({name: "Vivi", imageUrl: "vivi.jpg", clicked: false});
   const [member11, setMember11] = useState({name: "Hyunjin", imageUrl: "hyunjin.jpg", clicked: false});
 
-  const placeHolderList = [
+  const[memberList, setMemberList] = useState([
     member0, member1, member2,
     member3, member4, member5,
     member6, member7, member8,
     member9, member10, member11
-  ];
-
-  const[memberList, setMemberList] = useState(placeHolderList);
+  ]);
 
   const shuffle = (array) => {
     let currentIndex = array.length,  randomIndex;
@@ -48,13 +46,26 @@ const App = () => {
     return array;
   }
 
-  const randomize = () => {
+  const resetGame = () => {
+    setScore(score => 0);
+    memberList.forEach(member => {
+      member.clicked = false;
+    })
+  }
+
+  const handleScore = (member) => {
+    if (!member.clicked) {
+      // resetGame();
+      setScore(score => score + 1);
+    }
+  }
+
+  const randomize = (member) => {
     setMemberList([...shuffle(memberList)]);
-    setMember0((prevState) => ({
-      ...prevState,
-      clicked: true
-    }))
-    console.table(memberList)
+    handleScore(member);
+    member.clicked = true;
+    console.table(memberList);
+    console.log(member0);
   }
 
   return (
@@ -69,7 +80,7 @@ const App = () => {
               member = {member}
               name = {member.name}
               imageUrl = {member.imageUrl}
-              onClick = {randomize}
+              onClick = {() => randomize(member)}
               />
           )
         })}
