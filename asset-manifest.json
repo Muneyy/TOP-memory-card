@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/TOP-memory-card/static/css/main.afb9fd38.css",
+    "main.js": "/TOP-memory-card/static/js/main.e123dc8e.js",
+    "static/js/787.d6a8b40f.chunk.js": "/TOP-memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/yeojin.jpg": "/TOP-memory-card/static/media/yeojin.63b32030c25393917bc6.jpg",
+    "static/media/kim lip.jpg": "/TOP-memory-card/static/media/kim lip.10bc6f88b76c1bc0c5f6.jpg",
+    "static/media/gowon.jpg": "/TOP-memory-card/static/media/gowon.d2f71812efd5473b50ed.jpg",
+    "static/media/choerry.jpg": "/TOP-memory-card/static/media/choerry.2f64cb18307127a402ab.jpg",
+    "static/media/hyunjin.jpg": "/TOP-memory-card/static/media/hyunjin.fecc24263e0c00e4436a.jpg",
+    "static/media/haseul.jpg": "/TOP-memory-card/static/media/haseul.5a9f4c7fb82c9d12ec81.jpg",
+    "static/media/hyejoo.jpg": "/TOP-memory-card/static/media/hyejoo.173b5226ca400c5d16b1.jpg",
+    "static/media/heejin.jpg": "/TOP-memory-card/static/media/heejin.2451319f4c8742e87305.jpg",
+    "static/media/jinsoul.jpg": "/TOP-memory-card/static/media/jinsoul.8fe98b5d9883e3a2f172.jpg",
+    "static/media/yves.jpg": "/TOP-memory-card/static/media/yves.0348b7e670f55e27c204.jpg",
+    "static/media/vivi.jpg": "/TOP-memory-card/static/media/vivi.a4d739a827dc5c02050f.jpg",
+    "static/media/chuu.jpg": "/TOP-memory-card/static/media/chuu.676e280711de671d71d7.jpg",
+    "index.html": "/TOP-memory-card/index.html",
+    "main.afb9fd38.css.map": "/TOP-memory-card/static/css/main.afb9fd38.css.map",
+    "main.e123dc8e.js.map": "/TOP-memory-card/static/js/main.e123dc8e.js.map",
+    "787.d6a8b40f.chunk.js.map": "/TOP-memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afb9fd38.css",
+    "static/js/main.e123dc8e.js"
+  ]
+}
