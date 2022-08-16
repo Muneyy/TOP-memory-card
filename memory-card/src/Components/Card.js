@@ -14,7 +14,6 @@ const images = importAll(require.context('../Images', false, /\.(png|jpe?g|svg)$
 {/* <img src={images['doggy.png']} /> */}
 
 const Card = ({member, name, imageUrl, onClick}) => {
-    // member.clicked = true;
     return (
         <div className="card" onClick={onClick}>
             <img src={images[imageUrl]} alt="Loona"/>         
