@@ -1,0 +1,13 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    box-sizing: border-box;
+    padding: 16px;
+}

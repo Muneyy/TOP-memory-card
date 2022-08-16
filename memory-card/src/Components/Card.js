@@ -1,0 +1,26 @@
+import React from "react";
+import { useState } from "react";
+import chuu from "../Images/chuu.jpg";
+import "../Styles/card.css";
+
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const images = importAll(require.context('../Images', false, /\.(png|jpe?g|svg)$/));
+
+{/* <img src={images['doggy.png']} /> */}
+
+const Card = ({member, name, imageUrl, onClick}) => {
+    // member.clicked = true;
+    return (
+        <div className="card" onClick={onClick}>
+            <img src={images[imageUrl]} alt="Loona"/>         
+            <h1>{name}</h1>
+        </div>
+    )
+}
+
+export default Card;
