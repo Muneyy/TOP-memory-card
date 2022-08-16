@@ -8,14 +8,14 @@ const App = () => {
   const [bestScore, setBestScore] = useState(0);
   
   useEffect(() => {
-    setBestScore(bestScore => {
-      if (bestScore < score) {
-        console.log(bestScore)
+    setBestScore(() => {
+      if (bestScore === score || bestScore < score) {
+        console.log(bestScore);
         return score
+      } else {
+        return bestScore
       }
-    }
-    )
-  }, [score])
+    })}, [score])
 
   const [member0, setMember0] = useState({name: "Chuu", imageUrl: "chuu.jpg", clicked: false});
   const [member1, setMember1] = useState({name: "Yves", imageUrl: "yves.jpg", clicked: false});
@@ -60,7 +60,7 @@ const App = () => {
   }
 
   const resetGame = () => {
-    setScore(score => 0);
+    setScore(0);
     memberList.forEach(member => {
       member.clicked = false;
     })
@@ -68,7 +68,7 @@ const App = () => {
 
   const handleScore = (member) => {
     if (!member.clicked) {
-      setScore(score => score + 1);
+      setScore(score + 1);
       member.clicked = true;
     } else {
       resetGame();
@@ -78,9 +78,6 @@ const App = () => {
   const randomize = (member) => {
     setMemberList([...shuffle(memberList)]);
     handleScore(member);
-    // member.clicked = true;
-    console.table(memberList);
-    console.log(member);
   }
 
   return (
