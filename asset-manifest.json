@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TOP-memory-card/static/css/main.afb9fd38.css",
-    "main.js": "/TOP-memory-card/static/js/main.e123dc8e.js",
+    "main.css": "/TOP-memory-card/static/css/main.6c687acd.css",
+    "main.js": "/TOP-memory-card/static/js/main.117e9d80.js",
     "static/js/787.d6a8b40f.chunk.js": "/TOP-memory-card/static/js/787.d6a8b40f.chunk.js",
     "static/media/yeojin.jpg": "/TOP-memory-card/static/media/yeojin.63b32030c25393917bc6.jpg",
     "static/media/kim lip.jpg": "/TOP-memory-card/static/media/kim lip.10bc6f88b76c1bc0c5f6.jpg",
@@ -15,13 +15,27 @@
     "static/media/yves.jpg": "/TOP-memory-card/static/media/yves.0348b7e670f55e27c204.jpg",
     "static/media/vivi.jpg": "/TOP-memory-card/static/media/vivi.a4d739a827dc5c02050f.jpg",
     "static/media/chuu.jpg": "/TOP-memory-card/static/media/chuu.676e280711de671d71d7.jpg",
+    "static/media/background.jpg": "/TOP-memory-card/static/media/background.d5b5331e311a86cc3d97.jpg",
+    "static/media/bifur.jpg": "/TOP-memory-card/static/media/bifur.56b254ff4c712d73fe7a.jpg",
+    "static/media/dori.jpg": "/TOP-memory-card/static/media/dori.6a05cdd5436ff5f3cc5b.jpg",
+    "static/media/fili.jpg": "/TOP-memory-card/static/media/fili.051d0bc485d8654b344d.jpg",
+    "static/media/nori.jpg": "/TOP-memory-card/static/media/nori.c3c21886fae17611d488.jpg",
+    "static/media/dwalin.jpg": "/TOP-memory-card/static/media/dwalin.08d94775c05d4f1928fd.jpg",
+    "static/media/bombur.jpg": "/TOP-memory-card/static/media/bombur.8a95a14b27dd3a6dba46.jpg",
+    "static/media/balin.jpg": "/TOP-memory-card/static/media/balin.bc1233ea40c71d0386f5.jpg",
+    "static/media/gloin.jpg": "/TOP-memory-card/static/media/gloin.fa947726b04d290fa738.jpg",
+    "static/media/ringbearerfont.TTF": "/TOP-memory-card/static/media/ringbearerfont.81688da96bd2ba917e09.TTF",
+    "static/media/bofur.jpg": "/TOP-memory-card/static/media/bofur.c471272bb59f334a2108.jpg",
+    "static/media/kili.jpg": "/TOP-memory-card/static/media/kili.3523b94fc44117c42339.jpg",
+    "static/media/ori.jpg": "/TOP-memory-card/static/media/ori.7211b11eb9bbbc633d74.jpg",
+    "static/media/oin.jpg": "/TOP-memory-card/static/media/oin.1e55a6d888df24312def.jpg",
     "index.html": "/TOP-memory-card/index.html",
-    "main.afb9fd38.css.map": "/TOP-memory-card/static/css/main.afb9fd38.css.map",
-    "main.e123dc8e.js.map": "/TOP-memory-card/static/js/main.e123dc8e.js.map",
+    "main.6c687acd.css.map": "/TOP-memory-card/static/css/main.6c687acd.css.map",
+    "main.117e9d80.js.map": "/TOP-memory-card/static/js/main.117e9d80.js.map",
     "787.d6a8b40f.chunk.js.map": "/TOP-memory-card/static/js/787.d6a8b40f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb9fd38.css",
-    "static/js/main.e123dc8e.js"
+    "static/css/main.6c687acd.css",
+    "static/js/main.117e9d80.js"
   ]
 }
