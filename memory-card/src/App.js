@@ -65,6 +65,7 @@ const App = () => {
       member.clicked = false;
     })
     console.table(memberList);
+    
   }
 
   const handleScore = (member) => {
