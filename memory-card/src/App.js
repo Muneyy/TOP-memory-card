@@ -17,20 +17,20 @@ const App = () => {
       }
     })}, [score])
 
-  const [member0, setMember0] = useState({name: "Chuu", imageUrl: "chuu.jpg", clicked: false});
-  const [member1, setMember1] = useState({name: "Yves", imageUrl: "yves.jpg", clicked: false});
-  const [member2, setMember2] = useState({name: "Hyejoo", imageUrl: "hyejoo.jpg", clicked: false});
-  const [member3, setMember3] = useState({name: "Gowon", imageUrl: "gowon.jpg", clicked: false});
+  const [member0, setMember0] = useState({name: "BALIN", imageUrl: "balin.jpg", clicked: false});
+  const [member1, setMember1] = useState({name: "BIFUR", imageUrl: "bifur.jpg", clicked: false});
+  const [member2, setMember2] = useState({name: "BOFUR", imageUrl: "bofur.jpg", clicked: false});
+  const [member3, setMember3] = useState({name: "BOMBUR", imageUrl: "bombur.jpg", clicked: false});
 
-  const [member4, setMember4] = useState({name: "Kim Lip", imageUrl: "kim lip.jpg", clicked: false});
-  const [member5, setMember5] = useState({name: "Jinsoul", imageUrl: "jinsoul.jpg", clicked: false});
-  const [member6, setMember6] = useState({name: "Choerry", imageUrl: "choerry.jpg", clicked: false});
-  const [member7, setMember7] = useState({name: "Yeojin", imageUrl: "yeojin.jpg", clicked: false});
+  const [member4, setMember4] = useState({name: "DORI", imageUrl: "dori.jpg", clicked: false});
+  const [member5, setMember5] = useState({name: "DWALIN", imageUrl: "dwalin.jpg", clicked: false});
+  const [member6, setMember6] = useState({name: "FILI", imageUrl: "fili.jpg", clicked: false});
+  const [member7, setMember7] = useState({name: "GLOIN", imageUrl: "gloin.jpg", clicked: false});
 
-  const [member8, setMember8] = useState({name: "Heejin", imageUrl: "heejin.jpg", clicked: false});
-  const [member9, setMember9] = useState({name: "Haseul", imageUrl: "haseul.jpg", clicked: false});
-  const [member10, setMember10] = useState({name: "Vivi", imageUrl: "vivi.jpg", clicked: false});
-  const [member11, setMember11] = useState({name: "Hyunjin", imageUrl: "hyunjin.jpg", clicked: false});
+  const [member8, setMember8] = useState({name: "KILI", imageUrl: "kili.jpg", clicked: false});
+  const [member9, setMember9] = useState({name: "NORI", imageUrl: "nori.jpg", clicked: false});
+  const [member10, setMember10] = useState({name: "OIN", imageUrl: "oin.jpg", clicked: false});
+  const [member11, setMember11] = useState({name: "ORI", imageUrl: "ori.jpg", clicked: false});
 
   const placeHolderList = [
     member0, member1, member2,
@@ -39,7 +39,7 @@ const App = () => {
     member9, member10, member11
   ];
 
-  const[memberList, setMemberList] = useState(placeHolderList);
+  const [memberList, setMemberList] = useState(placeHolderList);
 
   const shuffle = (array) => {
     let currentIndex = array.length,  randomIndex;
@@ -64,6 +64,7 @@ const App = () => {
     memberList.forEach(member => {
       member.clicked = false;
     })
+    console.table(memberList);
   }
 
   const handleScore = (member) => {
@@ -84,7 +85,7 @@ const App = () => {
     <div className="app">
       <div className="score">
         <h3>Score: {score}</h3>
-        <h3>Best Score: {bestScore}</h3>
+        <h3>High Score: {bestScore}</h3>
       </div>
       <div className="card-container">
         {memberList.map(member => {

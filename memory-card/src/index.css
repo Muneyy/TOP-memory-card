@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Ringbearer";
+  src: local("Ringbearer"),
+   url("./Fonts/ringbearer/ringbearerfont.TTF") format("truetype");
+  }
